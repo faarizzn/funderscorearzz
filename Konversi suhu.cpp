@@ -13,7 +13,7 @@ void mainMenu() {
 	cout << "Menu            " << endl;
 	cout << "1. Celcius ke kelvin " << endl;
 	cout << "2. Kelvin ke celcius " << endl;
-	cout << "3. Celius ke Fahrenheit" << endl;
+	cout << "3. Celcius ke Fahrenheit" << endl;
 	cout << "4. Fahrenheit ke Celcius" << endl;
 	cout << "5. Kelvin ke Fahrenheit" << endl;
 	cout << "6. Fahrenheit ke Kelvin" << endl;
