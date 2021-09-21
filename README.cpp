@@ -16,38 +16,45 @@ void mainMenu() {
 
 }
 int main() {
-	string ab;
+
+	int ab;
 	float b, c, hasil;
 	float kelvin = 273.15;
-	cout << endl; 
-	do {
+	cout << endl;
+	do{
 		mainMenu();
 
 	
 
 		cout << "masukkan program yang ingin digunakan = ";
-		getline(cin, ab);
+		cin >> ab;
+		system("cls");
 
-		if (ab == "celcius") {
+		if (ab == 1) {
 			cout << "Masukkan suhu celcius = ";
 			cin >> b;
 
 			hasil = b + kelvin;
 			cout << " hasil nya adalah =" << hasil << " Kelvin" << endl;
+			
 		}
-		else if (ab == "kelvin") {
+		else if (ab == 2) {
 			cout << "masukkan suhu kelvin = ";
 			cin >> c;
 			hasil = c - kelvin;
-			cout << " hasilnya adalah = " << hasil << " Celcius" << endl;
+			cout << "hasilnya adalah = " << hasil << " Celcius" << endl;
+			
 		}
 		else {
 			cout << "sampai jumpa" << endl;
+		
 			system("pause");
 			cin.get();
 			return 0;
-		}
-	} while (ab == "exit");
+			system("cls");
+			
+		} 
+	} while (ab != 3);
 		cin.get();
 	return 0;
 }
